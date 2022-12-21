@@ -1,0 +1,74 @@
+<html>
+<!DOCTYPE html>
+    <head>
+      <title>Naftali Kruman - Hobbies</title>
+      <style>
+        body {
+          background: url("https://imgur.com/se81rS0.jpeg");
+          background-size: cover;
+          color: white;
+          font-family: Arial;
+        }
+        h1 {
+          font-size: 60px;
+          text-align: center;
+        }
+        p {
+          font-size: 40px;
+        }
+        input {
+          border: 0;
+          padding: 10px;
+          font-size: 18px;
+        }
+        input[type="submit"] {
+          background: red;
+          color: white;
+        }
+        .Profile {
+          border-radius: 50%;
+          border: 2px solid #555;
+          height: 270pX;
+          width: 270px;
+          display: block;
+          margin: 0 auto;
+        }
+        ul {
+          padding: 20px;
+          background: rgba(0,0,0,0.5);
+          opacity: 0.5;
+          text-align: center;
+        }
+        li {
+          display: inline;
+          text-align: center;
+          font-size: 60px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        a {
+          color: white;
+          padding: 20px 25px;
+          text-align: center;
+          text-decoration: none;
+        }
+        p {
+          padding: 10px 10px;
+          text-align: left;
+        }
+      </style>
+    </head>
+    <body>
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Hobbies">Hobbies</a></li>
+        <li><a href="CV">CV</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>  
+      <img src="https://i.imgur.com/mI1h31om.jpg" class="Profile">
+      <h1> Meet Naftali <h1>
+      <p>
+        I'm passionate about using economics to better understand our world and create a brighter future.
+      </p>
+    </body>
+</html>

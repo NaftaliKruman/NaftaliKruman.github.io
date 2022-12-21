@@ -1,0 +1,176 @@
+<html>
+<!DOCTYPE html>
+<head>
+  <title>Naftali Kruman - Contact</title>
+  <style>
+    body {
+      background: url("https://imgur.com/se81rS0.jpeg");
+      background-size: cover;
+      color: white;
+      font-family: Arial;
+    }
+    .header {
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      opacity: 0.5;
+      text-align: center;
+    }
+    .links {
+      display: inline;
+      text-align: center;
+      font-size: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    a {
+      color: white;
+      padding: 20px 25px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .label{
+      vertical-align: middle;
+    }
+    input[type="text"],select,textarea{
+      border: 0;
+      padding: 5px;
+      margin-left: 10px;
+      font-size: 20px;
+      text-align: center;
+      resize: vertical;
+    }
+    input[type="email"]{
+      border: 0;
+      padding: 5px;
+      margin-left: 10px;
+      font-size: 20px;
+      text-align: center;
+      resize: vertical;
+    }
+    input[type="tel"]{
+      border: 0;
+      padding: 5px;
+      margin-left: 10px;
+      font-size: 20px;
+      text-align: center;
+      resize: vertical;
+    }
+    input[type="submit"] {
+      background: rgb(55, 222, 219);
+      opacity: 0.75;
+      color: white;
+      border: 0;
+      padding: 5px;
+      margin-left: 10px;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+    }
+    h1 {
+      font-size: 50px;
+      display: block;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+      text-align: left;
+    }
+    .form{
+      font-size: 20px;
+      text-align: left;
+      margin-left: 15%;
+    }
+    .parent{
+      margin: 1rem;
+      padding: 2rem 2rem;
+      text-align: center;
+    }
+    .child{
+      display: inline-block;
+      padding: 1rem 1rem;
+      vertical-align: middle;
+    }
+    .LinkedIn {
+      height: 200px;
+      width: 200px;
+      float: right;
+    }
+    label textarea{
+      vertical-align: middle;
+    }
+    .error {color: #FF0000;}
+  </style>
+</head>
+<body>
+<?php
+  $nameErr = $emailErr = $phoneErr = $messageErr = "";
+  $name = $email = $phone = $message = "";
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) {
+      $nameErr = "Name is required";
+    } else {
+      $name = test_input($_POST["name"]);
+      // check if name only contains letters and whitespace
+      if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+        $nameErr = "Only letters and white space allowed";
+      }
+    }
+
+    // Checking Email Address
+    if (empty($_POST["email"])) {
+      $emailErr = "Email is required";
+    } else {
+      $email = test_input($_POST["email"]);
+      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $emailErr = "Invalid email format";
+      }
+    }
+
+    // Checking Phone Number
+    $phone = test_input($_POST["phone"]);
+    if (!preg_match("/^[0-9]{10}+$/",$phone)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+
+    //Setting Message
+    $message = test_input($_POST["message"]);
+  }
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+  <ul class="header">
+    <li class="links"><a href="Home">Home</a></li>
+    <li class="links"><a href="Hobbies">Hobbies</a></li>
+    <li class="links"><a href="CV">CV</a></li>
+    <li class="links"><a href="Contact">Contact</a></li>
+  </ul>
+  <div class="parent">
+    <h1>Let's Stay In Touch</h1>
+    <div class="child">
+      <form action="Responses.php" method="post">
+        <h2>Fill out the form to contact me directly</h2>
+        <label for="name"> Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        <label for="message"> Message: </label>
+        <textarea style="vertical-align: middle" id="message" name="message" rows="3" cols="23"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="child">
+      <a href="https://www.linkedin.com/in/naftalikruman/" title="LinkedIn"><img src="LinkedIn.png" class="LinkedIn"></img></a>
+    </div> 
+  </div>
+</body>
+</html>
