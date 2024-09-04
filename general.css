@@ -27,7 +27,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 15px; /* Reduced margin for better spacing on smaller screens */
+    margin: 0 10px; /* Reduced margin for better spacing on smaller screens */
     display: flex;
     align-items: center;
 }
