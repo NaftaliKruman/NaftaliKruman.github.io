@@ -1,0 +1,63 @@
+/* Hobbies Section Styles */
+#hobbies {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the section horizontally */
+    max-width: 1200px; /* Match the container width */
+}
+
+.hobbies-text {
+    flex: 1;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-left: -40px; /* Adjust this value as needed */
+}
+
+.hobbies-image {
+    flex: 0 0 30%;
+    max-width: 350px;
+    margin: 0;
+    align-self: flex-start;
+}
+
+.hobbies-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hobbies {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .hobbies-text {
+        padding: 10px;
+        margin-left: -20px; /* Adjust negative margin for smaller screens */
+    }
+
+    .hobbies-image {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hobbies-text {
+        margin-left: -10px; /* Smaller negative margin for very small screens */
+    }
+
+    .hobbies-image {
+        max-width: 100%;
+    }
+}

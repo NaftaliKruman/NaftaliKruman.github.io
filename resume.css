@@ -1,0 +1,80 @@
+/* Resume Page Specific Styles */
+.resume-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Reduced space between text and image */
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1200px; /* Ensure it matches the general container width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Resume Summary Styles */
+.resume-summary {
+    flex: 1; /* Allow text to take up remaining space */
+    margin: -20px 0; /* Adjust top and bottom margins as needed */
+    margin-left: -20px; /* Adjust for alignment */
+}
+
+/* Resume Image Styles */
+.resume-image {
+    flex: 0 0 40%; /* Set the image width to 40% of the container width */
+    max-width: 400px; /* Ensure the image doesn't exceed this width */
+    margin-top: -80px; /* Move the image up significantly on larger screens */
+    margin-bottom: -40px; /* Reduce gap to footer by using a negative margin */
+    align-self: flex-start; /* Align image to the start of the container */
+    position: relative; /* Use relative positioning */
+}
+
+.resume-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for a modern touch */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .resume-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center-align items */
+        gap: 15px; /* Adjust gap for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .resume-image {
+        max-width: 90%; /* Adjust max-width for mobile screens */
+        margin-top: -30px; /* Reduce margin-top on tablet screens */
+        margin-bottom: -20px; /* Adjust negative margin-bottom on tablet screens */
+    }
+
+    .resume-summary {
+        margin-left: -10px; /* Adjust for smaller screens */
+        margin-top: 0; /* Adjust top margin for smaller screens */
+        margin-bottom: 10px; /* Adjust bottom margin for smaller screens */
+        text-align: center; /* Center-align text for better appearance on smaller screens */
+    }
+
+    .resume-summary ul {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-image {
+        max-width: 100%; /* Ensure image fits within very small screens */
+        margin-top: 0; /* Reset margin-top for very small screens */
+        margin-bottom: -10px; /* Adjust negative margin-bottom for very small screens */
+    }
+
+    .resume-summary {
+        margin-left: 0; /* Reset margin-left for very small screens */
+        margin-top: 0; /* Reset top margin for very small screens */
+        margin-bottom: 10px; /* Adjust bottom margin for very small screens */
+        text-align: center; /* Center-align text for very small screens */
+    }
+
+    .resume-summary ul {
+        font-size: 0.9em; /* Further adjust font size for very small screens */
+    }
+}
