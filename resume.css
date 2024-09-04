@@ -1,0 +1,32 @@
+/* Resume Page Specific Styles */
+.resume-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; /* Increased gap for better spacing */
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Align content to the right */
+}
+
+.resume-summary {
+    flex: 1;
+    margin-top: 20px; /* Adjust spacing as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.resume-summary ul {
+    font-size: 1.1em; /* Adjust the size as needed */
+    padding-left: 20px; /* Add some padding for list items */
+}
+
+.resume-image {
+    max-width: 400px;
+    margin-top: -370px; /* Adjust as needed */
+    margin-bottom: -60px;
+    align-self: flex-end; /* Align the image to the end of the container */
+}
+
+.resume-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for a modern touch */
+}

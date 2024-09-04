@@ -1,0 +1,30 @@
+
+#hobbies {
+    display: flex;
+    align-items: flex-start;
+    gap: 0px; /* Increased gap for better spacing */
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Align content to the right */
+}
+
+.hobbies-text {
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.hobbies-image {
+    flex: 0 0 30%;
+    max-width: 350px;
+    align-self: flex-start;
+    margin: 0;
+    margin-bottom: -50px;
+}
+
+.hobbies-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
