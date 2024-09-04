@@ -2,54 +2,56 @@
 #hobbies {
     display: flex;
     align-items: flex-start;
-    gap: 20px; /* Adjusted gap for better spacing */
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Align content to the start */
-    padding: 20px; /* Added padding to align with other sections */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the section horizontally */
+    max-width: 1200px; /* Match the container width */
 }
 
 .hobbies-text {
     flex: 1;
-    margin: 0; /* Reset margins */
-    padding: 20px; /* Added padding to match other sections */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    max-width: 100%; /* Ensure text does not overflow */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .hobbies-image {
-    flex: 0 0 30%; /* Adjust width if necessary */
-    max-width: 350px; /* Adjust size for better alignment */
-    margin: 0; /* Reset margin for proper alignment */
-    align-self: flex-start; /* Align the image to the top of the container */
+    flex: 0 0 30%;
+    max-width: 350px;
+    margin: 0;
+    align-self: flex-start;
 }
 
 .hobbies-image img {
     width: 100%;
     height: auto;
-    border-radius: 5px; /* Rounded corners for a modern touch */
+    border-radius: 5px;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     #hobbies {
-        flex-direction: column; /* Stack text and images vertically */
-        align-items: flex-start; /* Align items to the start */
-        gap: 20px; /* Adjust gap for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 10px;
     }
 
     .hobbies-text {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px;
     }
 
     .hobbies-image {
-        max-width: 90%; /* Adjust max-width for mobile screens */
+        max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .hobbies-image {
-        max-width: 100%; /* Ensure image fits within very small screens */
+        max-width: 100%;
     }
 }
