@@ -5,22 +5,21 @@
     gap: 20px; /* Adjusted gap for better spacing */
     flex-wrap: wrap;
     justify-content: flex-start; /* Align content to the start */
+    padding: 20px; /* Added padding to align with other sections */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .hobbies-text {
     flex: 1;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px; /* Adjusted margin for better spacing */
-    margin-right: 20px; /* Add margin-right for better spacing */
+    margin: 0; /* Reset margins */
+    padding: 20px; /* Added padding to match other sections */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .hobbies-image {
     flex: 0 0 30%;
     max-width: 350px;
-    margin-top: 0; /* Reset margin for proper alignment */
-    margin-bottom: 20px; /* Adjust margin-bottom for better spacing */
-    align-self: flex-start; /* Align the image to the start of the container */
+    margin: 0; /* Reset margin for proper alignment */
 }
 
 .hobbies-image img {
@@ -35,11 +34,11 @@
         flex-direction: column; /* Stack text and images vertically */
         align-items: flex-start; /* Align items to the start */
         gap: 20px; /* Adjust gap for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .hobbies-text {
-        margin-left: 0;
-        margin-right: 0; /* Remove side margins for mobile */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .hobbies-image {
