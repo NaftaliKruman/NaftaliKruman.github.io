@@ -15,6 +15,7 @@
     flex: 1; /* Allow text to take up remaining space */
     margin: -20px 0; /* Adjust top and bottom margins as needed */
     margin-left: -20px; /* Adjust for alignment */
+    text-align: left; /* Ensure text is left-aligned on larger screens */
 }
 
 /* Resume Image Styles */
@@ -49,8 +50,8 @@
     }
 
     .resume-summary {
-        margin-left: -10px; /* Adjust for smaller screens */
-        margin-top: 0; /* Adjust top margin for smaller screens */
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-top: 0; /* Reset top margin for smaller screens */
         margin-bottom: 10px; /* Adjust bottom margin for smaller screens */
         text-align: center; /* Center-align text for better appearance on smaller screens */
     }
