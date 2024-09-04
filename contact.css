@@ -5,8 +5,9 @@ form {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     max-width: 600px; /* Optional: set a max width for better layout */
-    margin: 20px auto; /* Center-align form with margin auto on the sides */
-    margin-bottom: 20px; /* Adjust bottom margin for spacing */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-top: 20px; /* Add margin-top to align with header */
+    margin-bottom: 20px; /* Adjust bottom margin as needed */
 }
 
 .form-group {
@@ -48,26 +49,16 @@ button[type="submit"]:hover {
     background-color: #555;
 }
 
-/* Responsive Adjustments */
+/* Adjustments to align with header */
 @media (max-width: 768px) {
     form {
-        margin: 20px; /* Ensure form has space on smaller screens */
-        width: auto; /* Remove max-width for better fit on mobile */
-    }
-
-    .form-group input, .form-group textarea {
-        font-size: 1em; /* Adjust font size for better readability on mobile */
-        padding: 10px; /* Increase padding for better touch interaction */
-    }
-
-    .form-group textarea {
-        height: 150px; /* Adjust height for better fit on smaller screens */
+        width: 90%; /* Ensure the form adjusts well on smaller screens */
+        margin: 0 auto; /* Center the form horizontally on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    .form-group input, .form-group textarea {
-        font-size: 0.9em; /* Further adjust font size for very small screens */
-        padding: 12px; /* Further increase padding for touch friendliness */
+    form {
+        width: 95%; /* Further adjust for very small screens */
     }
 }
