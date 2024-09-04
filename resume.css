@@ -22,7 +22,7 @@
 .resume-image {
     flex: 0 0 40%; /* Adjusts image width proportionally */
     max-width: 400px;
-    margin-top: 20px; /* Adjust margin-top to lower the image */
+    margin-top: 40px; /* Increased margin-top to lower the image */
     margin-bottom: 20px; /* Adjust bottom margin for spacing */
     align-self: flex-start; /* Align the image to the start of the container */
 }
