@@ -15,7 +15,7 @@
     flex: 1; /* Allow text to take up remaining space */
     margin: -20px 0; /* Adjust top and bottom margins as needed */
     margin-left: -20px; /* Adjust for alignment */
-    text-align: left; /* Ensure text is left-aligned on larger screens */
+    text-align: left; /* Ensure text is left-aligned on larger screens and smaller screens */
 }
 
 /* Resume Image Styles */
@@ -38,7 +38,7 @@
 @media (max-width: 768px) {
     .resume-content {
         flex-direction: column; /* Stack content vertically on smaller screens */
-        align-items: center; /* Center-align items */
+        align-items: flex-start; /* Align items to the start (left) */
         gap: 15px; /* Adjust gap for smaller screens */
         padding: 10px; /* Adjust padding for smaller screens */
     }
@@ -53,7 +53,7 @@
         margin-left: 0; /* Reset margin-left for smaller screens */
         margin-top: 0; /* Reset top margin for smaller screens */
         margin-bottom: 10px; /* Adjust bottom margin for smaller screens */
-        text-align: center; /* Center-align text for better appearance on smaller screens */
+        text-align: left; /* Keep text left-aligned on smaller screens */
     }
 
     .resume-summary ul {
@@ -72,7 +72,7 @@
         margin-left: 0; /* Reset margin-left for very small screens */
         margin-top: 0; /* Reset top margin for very small screens */
         margin-bottom: 10px; /* Adjust bottom margin for very small screens */
-        text-align: center; /* Center-align text for very small screens */
+        text-align: left; /* Keep text left-aligned for very small screens */
     }
 
     .resume-summary ul {
