@@ -1,9 +1,10 @@
+/* Hobbies Section Styles */
 #hobbies {
     display: flex;
     align-items: flex-start;
-    gap: 20px; /* Adjust gap for better spacing */
+    gap: 20px; /* Adjusted gap for better spacing */
     flex-wrap: wrap;
-    justify-content: flex-start; /* Align content to the start on all screens */
+    justify-content: flex-start; /* Align content to the start */
 }
 
 .hobbies-text {
@@ -17,42 +18,37 @@
 .hobbies-image {
     flex: 0 0 30%;
     max-width: 350px;
-    align-self: flex-start;
-    margin: 0;
+    margin-top: 0; /* Reset margin for proper alignment */
     margin-bottom: 20px; /* Adjust margin-bottom for better spacing */
+    align-self: flex-start; /* Align the image to the start of the container */
 }
 
 .hobbies-image img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners for a modern touch */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     #hobbies {
         flex-direction: column; /* Stack text and images vertically */
-        align-items: center; /* Center align items */
+        align-items: flex-start; /* Align items to the start */
+        gap: 20px; /* Adjust gap for smaller screens */
     }
 
     .hobbies-text {
         margin-left: 0;
         margin-right: 0; /* Remove side margins for mobile */
-        text-align: center; /* Center align text */
     }
 
     .hobbies-image {
-        flex: 1 0 auto; /* Allow image to take full width on mobile */
         max-width: 90%; /* Adjust max-width for mobile screens */
     }
 }
 
 @media (max-width: 480px) {
-    #hobbies {
-        gap: 10px; /* Reduce gap for very small screens */
-    }
-
     .hobbies-image {
-        max-width: 100%; /* Ensure image fits within the screen */
+        max-width: 100%; /* Ensure image fits within very small screens */
     }
 }
