@@ -4,7 +4,7 @@
     align-items: flex-start;
     gap: 30px; /* Increased gap for better spacing */
     flex-wrap: wrap;
-    justify-content: flex-start; /* Align content to the start for better mobile support */
+    justify-content: flex-start; /* Align content to the start */
 }
 
 .resume-summary {
@@ -22,8 +22,8 @@
 .resume-image {
     flex: 0 0 40%; /* Adjusts image width proportionally */
     max-width: 400px;
-    margin-top: 0; /* Remove negative margin for better alignment */
-    margin-bottom: 20px; /* Adjust spacing as needed */
+    margin-top: 20px; /* Adjust margin-top to lower the image */
+    margin-bottom: 20px; /* Adjust bottom margin for spacing */
     align-self: flex-start; /* Align the image to the start of the container */
 }
 
@@ -43,8 +43,7 @@
 
     .resume-image {
         max-width: 90%; /* Adjust max-width for mobile screens */
-        margin-top: 0; /* Reset margin for better alignment on mobile */
-        margin-bottom: 20px; /* Ensure spacing is consistent */
+        margin-top: 20px; /* Ensure image is properly spaced on mobile */
     }
 
     .resume-summary ul {
