@@ -162,23 +162,25 @@ footer {
     }
 
     header nav ul {
-        flex-direction: row; /* Two items per row */
-        flex-wrap: wrap; /* Allow wrapping */
+        flex-direction: row; /* Align items in a row */
+        flex-wrap: wrap; /* Allow wrapping of items */
         justify-content: center; /* Center items horizontally */
+        gap: 5px; /* Reduce space between items */
     }
 
     header nav ul li {
-        width: calc(50% - 20px); /* Each item takes half the width minus gap */
+        width: calc(50% - 10px); /* Each item takes half the width minus gap */
         box-sizing: border-box; /* Ensure padding and border are included in the width */
+        margin: 0; /* Remove margin for less space between items */
     }
 
     header nav ul li.icon img {
-        width: 30px; /* Adjust icon size further for very small screens */
-        height: 30px;
+        width: 25px; /* Adjust icon size for small screens */
+        height: 25px;
     }
 
     h1, h2 {
-        font-size: 1.5em; /* Adjust further for very small screens */
+        font-size: 1.5em; /* Adjust heading size for very small screens */
     }
 
     p, ul {
