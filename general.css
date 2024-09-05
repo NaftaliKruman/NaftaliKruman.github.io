@@ -136,12 +136,14 @@ footer {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     header nav ul {
-        flex-direction: column; /* Stack navigation items vertically on smaller screens */
-        padding: 0 10px;
+        flex-direction: row; /* Keep items in a row on medium screens */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        justify-content: center; /* Center items horizontally */
+        padding: 0;
     }
 
     header nav ul li {
-        margin: 10px 0; /* Adjust spacing between nav items */
+        margin: 5px 10px; /* Adjust spacing between nav items */
     }
 
     h1, h2 {
@@ -159,21 +161,15 @@ footer {
         padding: 10px 0; /* Adjust padding for smaller screens */
     }
 
-    header nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two items per row */
-        gap: 10px; /* Space between items */
-        justify-items: center; /* Center items horizontally */
-    }
-
     header nav ul {
-        display: flex;
-        flex-direction: column; /* Stack navigation items vertically on very small screens */
-        padding: 0;
+        flex-direction: row; /* Two items per row */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center items horizontally */
     }
 
     header nav ul li {
-        margin: 0;
+        width: calc(50% - 20px); /* Each item takes half the width minus gap */
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
     }
 
     header nav ul li.icon img {
