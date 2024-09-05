@@ -55,7 +55,7 @@ button[type="submit"]:hover {
 .form-indicator {
     font-size: 0.875em;
     color: #888;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px; /* Ensure it's spaced out from the form */
 }
 
