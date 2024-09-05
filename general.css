@@ -32,51 +32,21 @@ header nav ul li {
     align-items: center;
 }
 
-header nav ul li.icon {
-    order: -1; /* Move the icon to the top */
+header nav ul li.icon img {
+    width: 40px; /* Adjust icon size for better scaling */
+    height: 40px;
+    vertical-align: middle;
 }
 
-.menu-toggle {
-    display: none;
-}
-
-.menu-icon img {
-    width: 30px; /* Smaller icon size on mobile */
-    height: 30px;
-    margin-right: 10px; /* Space between icon and dropdown menu */
-}
-
-/* Dropdown menu styles */
-.dropdown-menu {
-    display: none; /* Hide dropdown menu by default */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333; /* Match header background color */
-    position: absolute;
-    top: 100%; /* Position below the icon */
-    left: 0;
-    width: 100%; /* Full width of the parent */
-}
-
-.dropdown-menu li {
-    margin: 0;
-}
-
-.dropdown-menu li a {
-    display: block;
-    padding: 10px;
+header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 600; /* Slightly lighter weight for a modern look */
+    font-size: 1.1em; /* Adjusted font size for a more balanced look */
 }
 
-.dropdown-menu li a:hover {
-    background-color: #444;
-}
-
-/* Show dropdown menu when checkbox is checked */
-.menu-toggle:checked ~ .dropdown-menu {
-    display: block; /* Show dropdown menu when checkbox is checked */
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Container Styles */
@@ -162,17 +132,19 @@ footer {
     header nav ul {
         flex-direction: column; /* Stack navigation items vertically on smaller screens */
         padding: 0 10px;
-        position: relative; /* Positioning for dropdown menu */
     }
 
     header nav ul li {
         margin: 10px 0; /* Adjust spacing between nav items */
-        display: flex; /* Align items horizontally */
-        align-items: center; /* Center align items */
     }
 
-    .dropdown-menu {
-        width: auto; /* Adjust width to fit content */
+    h1, h2 {
+        font-size: 1.8em; /* Smaller heading size on mobile */
+        margin-top: -10px;
+    }
+
+    .container {
+        width: 95%;
     }
 }
 
