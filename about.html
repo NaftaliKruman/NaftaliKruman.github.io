@@ -8,23 +8,27 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-container">
-                <a href="index.html" class="site-icon"><img src="logo.png" alt="Site Icon"></a>
-                <details class="dropdown">
-                    <summary>Menu</summary>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <!-- <li><a href="projects.html">Projects</a></li> -->
-                        <!-- <li><a href="blog.html">Blog</a></li> -->
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </details>
-            </div>
-        </nav>
+    <nav>
+        <ul>
+            <li class="nav-item icon">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <img src="logo.png" alt="Site Icon">
+                </label>
+            </li>
+            <li class="nav-item dropdown">
+                <ul id="dropdownMenu" class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <!-- <li><a href="projects.html">Projects</a></li> -->
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     </header>
     <section id="about">
         <div class="container">
