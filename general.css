@@ -153,54 +153,18 @@ footer {
         padding: 10px 0; /* Adjust padding for smaller screens */
     }
 
-    header nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: center; /* Center align items */
-    }
-
-    header nav ul li {
-        margin: 5px 0; /* Adjust spacing between nav items */
-    }
-
-    header nav ul li a {
-        font-size: 1em; /* Adjust font size for mobile */
-    }
-
-    header nav ul li.icon img {
-        width: 30px; /* Adjust icon size further for very small screens */
-        height: 30px;
-    }
-
-    h1, h2 {
-        font-size: 1.5em; /* Adjust further for very small screens */
-    }
-
-    p, ul {
-        font-size: 0.9em; /* Slightly reduce text size */
-    }
-
-    section {
-        padding: 15px 10px; /* Adjust padding for better fit */
-    }
-}
-
-/* Mobile Header Layout */
-@media (max-width: 480px) {
-    header {
-        padding: 10px 0; /* Adjust padding for smaller screens */
-    }
-
     header nav {
         display: flex;
         flex-direction: column; /* Stack rows vertically */
-        align-items: center;
+        width: 100%;
     }
 
     header nav .top-row,
     header nav .bottom-row {
         display: flex;
-        justify-content: center; /* Center items horizontally */
         width: 100%;
+        justify-content: flex-start; /* Align items to the left */
+        padding: 0 10px; /* Add padding to the sides */
     }
 
     header nav .top-row {
@@ -228,13 +192,11 @@ footer {
 
     header nav .bottom-row ul {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row; /* Keep links in a row */
+        padding: 0 10px; /* Add padding to the sides */
     }
 
     header nav .bottom-row ul li {
-        margin: 5px; /* Adjust spacing between items */
+        margin: 0 10px; /* Adjust spacing between items */
     }
 }
-
