@@ -129,26 +129,6 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column; /* Stack navigation items vertically on smaller screens */
-        padding: 0 10px;
-    }
-
-    header nav ul li {
-        margin: 10px 0; /* Adjust spacing between nav items */
-    }
-
-    h1, h2 {
-        font-size: 1.8em; /* Smaller heading size on mobile */
-        margin-top: -10px;
-    }
-
-    .container {
-        width: 95%;
-    }
-}
-
-@media (max-width: 480px) {
     header {
         padding: 10px 0; /* Adjust padding for smaller screens */
     }
@@ -162,9 +142,11 @@ footer {
     header nav .top-row,
     header nav .bottom-row {
         display: flex;
-        width: 100%;
+        flex-direction: row; /* Ensure items are in a row */
         justify-content: flex-start; /* Align items to the left */
-        padding: 0 10px; /* Add padding to the sides */
+        width: 100%;
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
     }
 
     header nav .top-row {
@@ -193,152 +175,13 @@ footer {
     header nav .bottom-row ul {
         display: flex;
         flex-direction: row; /* Keep links in a row */
-        padding: 0 10px; /* Add padding to the sides */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
     }
 
     header nav .bottom-row ul li {
         margin: 0 10px; /* Adjust spacing between items */
     }
-}
-/* General Styles */
-body {
-    font-family: 'Calibri', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f5f5f5; /* Lighter background color for a more professional look */
-}
-
-header {
-    background-color: #333; /* Dark background for better contrast */
-    color: #fff;
-    padding: 15px 0; /* Increased padding for a more substantial header */
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 10px; /* Reduced margin for better spacing on smaller screens */
-    display: flex;
-    align-items: center;
-}
-
-header nav ul li.icon img {
-    width: 40px; /* Adjust icon size for better scaling */
-    height: 40px;
-    vertical-align: middle;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600; /* Slightly lighter weight for a modern look */
-    font-size: 1.1em; /* Adjusted font size for a more balanced look */
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Container Styles */
-.container {
-    flex: 1;
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 10px; /* Add padding for smaller screens */
-}
-
-section {
-    padding: 20px 15px; /* Adjust padding for a spacious feel on all devices */
-}
-
-h1, h2 {
-    font-size: 2em; /* Adjusted heading sizes for smaller screens */
-    margin-bottom: 10px;
-    margin-top: -20px;
-    color: #333;
-}
-
-p {
-    font-size: 1em; /* Adjust size for readability */
-    margin: 0px;
-}
-
-ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-    font-size: 1em; /* Adjust size for readability */
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-.site-icon {
-    width: 40px; /* Adjust size for mobile */
-    height: 40px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0; /* Increased padding for a more prominent footer */
-    width: 100%;
-    margin-top: auto;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Ensure Footer Stays at the Bottom */
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.container {
-    flex: 1;
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column; /* Stack navigation items vertically on smaller screens */
-        padding: 0 10px;
-    }
-
-    header nav ul li {
-        margin: 10px 0; /* Adjust spacing between nav items */
-    }
 
     h1, h2 {
         font-size: 1.8em; /* Smaller heading size on mobile */
@@ -364,8 +207,9 @@ footer {
     header nav .top-row,
     header nav .bottom-row {
         display: flex;
-        width: 100%;
+        flex-direction: row; /* Ensure items are in a row */
         justify-content: flex-start; /* Align items to the left */
+        width: 100%;
         padding: 0 10px; /* Add padding to the sides */
     }
 
@@ -395,7 +239,8 @@ footer {
     header nav .bottom-row ul {
         display: flex;
         flex-direction: row; /* Keep links in a row */
-        padding: 0 10px; /* Add padding to the sides */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
     }
 
     header nav .bottom-row ul li {
