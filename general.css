@@ -32,7 +32,10 @@ header nav ul li {
     align-items: center;
 }
 
-/* Ensure menu toggle is hidden */
+header nav ul li.icon {
+    order: -1; /* Move the icon to the top */
+}
+
 .menu-toggle {
     display: none;
 }
@@ -72,12 +75,8 @@ header nav ul li {
 }
 
 /* Show dropdown menu when checkbox is checked */
-.menu-toggle:checked + .menu-icon + .dropdown-menu {
+.menu-toggle:checked ~ .dropdown-menu {
     display: block; /* Show dropdown menu when checkbox is checked */
-}
-
-header nav ul li.icon {
-    order: -1; /* Move the icon to the top */
 }
 
 /* Container Styles */
@@ -170,10 +169,6 @@ footer {
         margin: 10px 0; /* Adjust spacing between nav items */
         display: flex; /* Align items horizontally */
         align-items: center; /* Center align items */
-    }
-
-    header nav ul li.icon {
-        order: -1; /* Move the icon to the top */
     }
 
     .dropdown-menu {
