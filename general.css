@@ -17,23 +17,17 @@ header {
     text-align: center;
 }
 
-header nav {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping of navigation items */
-    justify-content: center; /* Center items horizontally */
-    gap: 10px; /* Space between items */
-}
-
 header nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     margin: 0;
     padding: 0;
 }
 
 header nav ul li {
-    margin: 0;
+    margin: 0 10px; /* Reduced margin for better spacing on smaller screens */
     display: flex;
     align-items: center;
 }
@@ -136,14 +130,12 @@ footer {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     header nav ul {
-        flex-direction: row; /* Keep items in a row on medium screens */
-        flex-wrap: wrap; /* Allow wrapping of items */
-        justify-content: center; /* Center items horizontally */
-        padding: 0;
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        padding: 0 10px;
     }
 
     header nav ul li {
-        margin: 5px 10px; /* Adjust spacing between nav items */
+        margin: 10px 0; /* Adjust spacing between nav items */
     }
 
     h1, h2 {
@@ -162,25 +154,25 @@ footer {
     }
 
     header nav ul {
-        flex-direction: row; /* Align items in a row */
-        flex-wrap: wrap; /* Allow wrapping of items */
-        justify-content: center; /* Center items horizontally */
-        gap: 5px; /* Reduce space between items */
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center align items */
     }
 
     header nav ul li {
-        width: calc(50% - 10px); /* Each item takes half the width minus gap */
-        box-sizing: border-box; /* Ensure padding and border are included in the width */
-        margin: 0; /* Remove margin for less space between items */
+        margin: 5px 0; /* Adjust spacing between nav items */
+    }
+
+    header nav ul li a {
+        font-size: 1em; /* Adjust font size for mobile */
     }
 
     header nav ul li.icon img {
-        width: 25px; /* Adjust icon size for small screens */
-        height: 25px;
+        width: 30px; /* Adjust icon size further for very small screens */
+        height: 30px;
     }
 
     h1, h2 {
-        font-size: 1.5em; /* Adjust heading size for very small screens */
+        font-size: 1.5em; /* Adjust further for very small screens */
     }
 
     p, ul {
@@ -189,5 +181,25 @@ footer {
 
     section {
         padding: 15px 10px; /* Adjust padding for better fit */
+    }
+}
+
+/* Mobile Header Layout */
+@media (max-width: 480px) {
+    header nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+        grid-template-rows: repeat(2, auto); /* Create 2 rows */
+        gap: 10px; /* Add space between items */
+    }
+
+    header nav ul li {
+        margin: 0; /* Remove margin in grid layout */
+        text-align: center; /* Center align text */
+    }
+
+    header nav ul li.icon {
+        grid-column: span 3; /* Make the icon span the entire width */
+        text-align: center;
     }
 }
