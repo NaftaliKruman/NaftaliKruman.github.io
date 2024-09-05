@@ -17,17 +17,23 @@ header {
     text-align: center;
 }
 
+header nav {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of navigation items */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between items */
+}
+
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     margin: 0;
     padding: 0;
 }
 
 header nav ul li {
-    margin: 0 10px; /* Reduced margin for better spacing on smaller screens */
+    margin: 0;
     display: flex;
     align-items: center;
 }
@@ -151,6 +157,23 @@ footer {
 @media (max-width: 480px) {
     header {
         padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+
+    header nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
+        gap: 10px; /* Space between items */
+        justify-items: center; /* Center items horizontally */
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column; /* Stack navigation items vertically on very small screens */
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 0;
     }
 
     header nav ul li.icon img {
