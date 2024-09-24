@@ -6,19 +6,32 @@
     flex-wrap: wrap;
     padding: 20px;
     box-sizing: border-box;
-    margin: 0 auto; /* Center the section horizontally */
-    max-width: 1200px; /* Match the container width */
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-/* Hobbies Text Styles */
+.hobbies-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between text and image */
+    flex-wrap: wrap;
+    width: 100%; /* Ensures full width */
+}
+
 .hobbies-text {
     flex: 1;
-    margin: -20px 0; /* Adjust top and bottom margins as needed */
-    margin-left: -20px; /* Align the text to the left */
-    padding: 20px; /* Add padding for spacing */
+    margin: 0;
+    padding: 20px;
     box-sizing: border-box;
     max-width: 100%;
-    text-align: left; /* Ensure text is left-aligned */
+    text-align: left; /* Keep text left-aligned */
+}
+
+/* H2 Styles for Reading and Movies */
+.hobbies-text h2 {
+    margin-top: 0; /* No margin at top */
+    margin-bottom: 10px; /* Spacing below the H2 */
+    font-size: 1.5em; /* Size consistent with resume page */
 }
 
 /* Hobbies Image Styles */
@@ -38,28 +51,10 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     #hobbies {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-    }
-
-    .hobbies-text {
-        margin-left: 0; /* Reset margin-left for smaller screens */
-        margin-top: 0; /* Reset top margin for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack content vertically */
     }
 
     .hobbies-image {
-        max-width: 90%; /* Adjust max-width for mobile screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .hobbies-image {
-        max-width: 100%; /* Ensure image fits within very small screens */
-    }
-
-    .hobbies-text {
-        margin-left: 0; /* Reset margin-left for very small screens */
-        margin-top: 0; /* Reset top margin for very small screens */
-        padding: 10px; /* Adjust padding for very small screens */
+        max-width: 90%; /* Adjust for mobile */
     }
 }
