@@ -4,22 +4,24 @@
     align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: flex-start;
     padding: 20px;
     box-sizing: border-box;
     margin: 0 auto; /* Center the section horizontally */
     max-width: 1200px; /* Match the container width */
 }
 
+/* Hobbies Text Styles */
 .hobbies-text {
     flex: 1;
-    margin: 0;
-    padding: 20px;
+    margin: -20px 0; /* Adjust top and bottom margins as needed */
+    margin-left: -20px; /* Align the text to the left */
+    padding: 20px; /* Add padding for spacing */
     box-sizing: border-box;
     max-width: 100%;
-    margin-left: -40px; /* Adjust this value as needed */
+    text-align: left; /* Ensure text is left-aligned */
 }
 
+/* Hobbies Image Styles */
 .hobbies-image {
     flex: 0 0 30%;
     max-width: 350px;
@@ -33,8 +35,31 @@
     border-radius: 5px;
 }
 
-.hobbies-text h1 {
-    font-size: 2em; /* Ensure this matches your other pages */
-    margin-top: 0; /* Adjust this if needed to match other pages */
-    margin-bottom: 10px; /* Ensure this matches other page styles */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hobbies {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .hobbies-text {
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-top: 0; /* Reset top margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .hobbies-image {
+        max-width: 90%; /* Adjust max-width for mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hobbies-image {
+        max-width: 100%; /* Ensure image fits within very small screens */
+    }
+
+    .hobbies-text {
+        margin-left: 0; /* Reset margin-left for very small screens */
+        margin-top: 0; /* Reset top margin for very small screens */
+        padding: 10px; /* Adjust padding for very small screens */
+    }
 }
