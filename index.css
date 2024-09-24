@@ -43,3 +43,41 @@
     margin-top: -10px; /* Move p higher */
     margin-bottom: 20px; /* Maintain space at the bottom */
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start (left) */
+        gap: 15px; /* Adjust gap for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .profile-image {
+        max-width: 90%; /* Adjust max-width for mobile screens */
+        margin-top: -30px; /* Reduce margin-top on tablet screens */
+        margin-bottom: -20px; /* Adjust negative margin-bottom on tablet screens */
+    }
+
+    .profile-text {
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-top: 0; /* Reset top margin for smaller screens */
+        margin-bottom: 10px; /* Adjust bottom margin for smaller screens */
+        text-align: left; /* Keep text left-aligned on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        max-width: 100%; /* Ensure image fits within very small screens */
+        margin-top: 0; /* Reset margin-top for very small screens */
+        margin-bottom: -10px; /* Adjust negative margin-bottom for very small screens */
+    }
+
+    .profile-text {
+        margin-left: 0; /* Reset margin-left for very small screens */
+        margin-top: 0; /* Reset top margin for very small screens */
+        margin-bottom: 10px; /* Adjust bottom margin for very small screens */
+        text-align: left; /* Keep text left-aligned for very small screens */
+    }
+}
