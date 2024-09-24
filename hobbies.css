@@ -1,4 +1,4 @@
-/* Hobbies Page Specific Styles */
+/* Resume Page Specific Styles */
 .hobbies-content {
     display: flex;
     align-items: flex-start;
@@ -10,3 +10,64 @@
     margin: 0 auto; /* Center the container horizontally */
 }
 
+/* Hobbies Summary Styles */
+.hobbies-text {
+    flex: 1; /* Allow text to take up remaining space */
+    margin: -20px 0; /* Adjust top and bottom margins as needed */
+    margin-left: -20px; /* Adjust for alignment */
+    text-align: left; /* Ensure text is left-aligned on larger screens and smaller screens */
+}
+
+/* Hobbies Image Styles */
+.hobbies-image {
+    flex: 0 0 40%; /* Set the image width to 40% of the container width */
+    max-width: 400px; /* Ensure the image doesn't exceed this width */
+    margin-top: -80px; /* Move the image up significantly on larger screens */
+    margin-bottom: -40px; /* Reduce gap to footer by using a negative margin */
+    align-self: flex-start; /* Align image to the start of the container */
+    position: relative; /* Use relative positioning */
+}
+
+.hobbies-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for a modern touch */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hobbies-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start (left) */
+        gap: 15px; /* Adjust gap for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .hobbies-image {
+        max-width: 90%; /* Adjust max-width for mobile screens */
+        margin-top: -30px; /* Reduce margin-top on tablet screens */
+        margin-bottom: -20px; /* Adjust negative margin-bottom on tablet screens */
+    }
+
+    .hobbies-text {
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-top: 0; /* Reset top margin for smaller screens */
+        margin-bottom: 10px; /* Adjust bottom margin for smaller screens */
+        text-align: left; /* Keep text left-aligned on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hobbies-image {
+        max-width: 100%; /* Ensure image fits within very small screens */
+        margin-top: 0; /* Reset margin-top for very small screens */
+        margin-bottom: -10px; /* Adjust negative margin-bottom for very small screens */
+    }
+
+    .hobbies-text {
+        margin-left: 0; /* Reset margin-left for very small screens */
+        margin-top: 0; /* Reset top margin for very small screens */
+        margin-bottom: 10px; /* Adjust bottom margin for very small screens */
+        text-align: left; /* Keep text left-aligned for very small screens */
+    }
+}
