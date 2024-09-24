@@ -76,7 +76,7 @@
     }
 
     .profile-text h1 {
-        font-size: 1.5em; /* Further adjust font size for very small screens */
+        font-size: 2em; /* Further adjust font size for very small screens */
         margin-top: -5px; /* Move h1 higher on very small screens */
         margin-bottom: 10px; /* Adjust margin-bottom */
     }
