@@ -4,18 +4,11 @@
     align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 20px;
     box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.hobbies-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px; /* Space between text and image */
-    flex-wrap: wrap;
-    width: 100%; /* Ensures full width */
+    margin: 0 auto; /* Center the section horizontally */
+    max-width: 1200px; /* Match the container width */
 }
 
 .hobbies-text {
@@ -24,17 +17,9 @@
     padding: 20px;
     box-sizing: border-box;
     max-width: 100%;
-    text-align: left; /* Keep text left-aligned */
+    margin-left: -40px; /* Adjust this value as needed */
 }
 
-/* H2 Styles for Reading and Movies */
-.hobbies-text h2 {
-    margin-top: 0; /* No margin at top */
-    margin-bottom: 10px; /* Spacing below the H2 */
-    font-size: 1.5em; /* Size consistent with resume page */
-}
-
-/* Hobbies Image Styles */
 .hobbies-image {
     flex: 0 0 30%;
     max-width: 350px;
