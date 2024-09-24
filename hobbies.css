@@ -47,14 +47,3 @@
     height: auto;
     border-radius: 5px;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    #hobbies {
-        flex-direction: column; /* Stack content vertically */
-    }
-
-    .hobbies-image {
-        max-width: 90%; /* Adjust for mobile */
-    }
-}
