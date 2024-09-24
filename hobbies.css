@@ -32,3 +32,9 @@
     height: auto;
     border-radius: 5px;
 }
+
+.hobbies-text h1 {
+    font-size: 2em; /* Ensure this matches your other pages */
+    margin-top: 0; /* Adjust this if needed to match other pages */
+    margin-bottom: 10px; /* Ensure this matches other page styles */
+}
