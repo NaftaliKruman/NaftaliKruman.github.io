@@ -25,17 +25,17 @@
     margin-bottom: -40px; /* Reduce gap to footer by using a negative margin */
     align-self: flex-start; /* Align image to the start of the container */
     position: relative; /* Use relative positioning */
+    height: 400px; /* Set a fixed height to match width for a perfect circle */
 }
 
 .profile-image img {
     width: 100%; /* Ensure it takes the full width of the container */
-    height: 100%; /* Set height to 100% to maintain aspect ratio */
-    max-width: 400px; /* Ensure image doesn't exceed this width */
-    max-height: 400px; /* Set a max height for a perfect circle */
+    height: 100%; /* Ensure height matches width for a perfect circle */
     border-radius: 50%; /* Make the image circular */
     border: 3px solid #333; /* Add a border */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
