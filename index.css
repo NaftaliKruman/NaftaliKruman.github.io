@@ -30,7 +30,9 @@
 .profile-image img {
     width: 100%;
     height: auto;
-    border-radius: 5px; /* Rounded corners for a modern touch */
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid #333; /* Add a border */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 /* Responsive Adjustments */
