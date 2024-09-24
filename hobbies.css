@@ -22,7 +22,7 @@
 .hobbies-image {
     flex: 0 0 40%; /* Set the image width to 40% of the container width */
     max-width: 400px; /* Ensure the image doesn't exceed this width */
-    margin-top: -80px; /* Move the image up significantly on larger screens */
+    margin-top: -60px; /* Move the image up significantly on larger screens */
     margin-bottom: -40px; /* Reduce gap to footer by using a negative margin */
     align-self: flex-start; /* Align image to the start of the container */
     position: relative; /* Use relative positioning */
