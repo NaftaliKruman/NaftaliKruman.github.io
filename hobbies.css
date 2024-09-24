@@ -1,1 +1,12 @@
+/* Hobbies Page Specific Styles */
+.hobbies-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Reduced space between text and image */
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1200px; /* Ensure it matches the general container width */
+    margin: 0 auto; /* Center the container horizontally */
+}
 
