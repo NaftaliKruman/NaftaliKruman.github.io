@@ -31,7 +31,7 @@
     width: 100%; /* Set the image to take the full width of the container */
     height: auto; /* Allow height to adjust based on aspect ratio */
     aspect-ratio: 1 / 1.2; /* Make the image taller than it is wide */
-    border-radius: 50%; /* Keep rounded edges for a circular look, but not a perfect circle */
+    border-radius: 40%; /* Keep rounded edges for a circular look, but not a perfect circle */
     border: 3px solid #333; /* Add a border */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
