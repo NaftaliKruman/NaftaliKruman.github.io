@@ -21,7 +21,6 @@
 .profile-image {
     flex: 0 0 40%; /* Set the image width to 40% of the container width */
     max-width: 300px; /* Ensure the image doesn't exceed this width */
-    height: 325px; /* Set a fixed height to match width for a perfect circle */
     align-self: flex-start; /* Align image to the start of the container */
     position: relative; /* Use relative positioning */
     margin-top: -40px; /* Move the image up significantly on larger screens */
@@ -30,7 +29,7 @@
 
 .profile-image img {
     width: 100%; /* Ensure it takes the full width of the container */
-    height: 100%; /* Ensure height matches width for a perfect circle */
+    height: auto; /* Ensure height matches width for a perfect circle */
     border-radius: 50%; /* Make the image circular */
     border: 3px solid #333; /* Add a border */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
