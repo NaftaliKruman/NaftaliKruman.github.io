@@ -28,12 +28,14 @@
 }
 
 .profile-image img {
-    width: 100%; /* Ensure it takes the full width of the container */
-    height: auto; /* Ensure height matches width for a perfect circle */
-    border-radius: 50%; /* Make the image circular */
+    width: 100%; /* Set the image to take the full width of the container */
+    height: auto; /* Allow height to adjust based on aspect ratio */
+    aspect-ratio: 4 / 5; /* Make the image taller than it is wide */
+    border-radius: 50%; /* Keep rounded edges for a circular look, but not a perfect circle */
     border: 3px solid #333; /* Add a border */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
+
 
 
 /* Responsive Adjustments */
