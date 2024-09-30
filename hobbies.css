@@ -81,4 +81,6 @@
     margin-top: -20px;
     color: #333;
     font-weight: bold; /* Ensure the heading is bold */
+    margin-top: 0.67em;  /* Approximately 10.67px */
+    margin-bottom: 0.67em; /* Approximately 10.67px */
 }
