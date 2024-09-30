@@ -72,3 +72,11 @@
         text-align: left; /* Keep text left-aligned for very small screens */
     }
 }
+/* New Rule for Ignoring Styles on H1 */
+.hobbies-content h1 {
+    all: unset; /* Reset all inherited styles */
+    font-size: 2em; /* Set your desired font size */
+    margin: 20px 0; /* Adjust margins as needed */
+    text-align: left; /* Adjust text alignment if needed */
+    /* Add any other specific styles you want for the h1 */
+}
