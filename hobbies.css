@@ -76,7 +76,9 @@
 .hobbies-content h1 {
     all: unset; /* Reset all inherited styles */
     font-size: 2em; /* Set your desired font size */
-    margin: 20px 0; /* Adjust margins as needed */
     text-align: left; /* Adjust text alignment if needed */
+    margin-bottom: 10px;
+    margin-top: -20px;
+    color: #333;
     /* Add any other specific styles you want for the h1 */
 }
