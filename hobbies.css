@@ -80,5 +80,5 @@
     margin-bottom: 10px;
     margin-top: -20px;
     color: #333;
-    /* Add any other specific styles you want for the h1 */
+    font-weight: bold; /* Ensure the heading is bold */
 }
