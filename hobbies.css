@@ -72,13 +72,3 @@
         text-align: left; /* Keep text left-aligned for very small screens */
     }
 }
-/* New Rule for Ignoring Styles on H1 */
-.hobbies-content h1 {
-    all: unset; /* Reset all inherited styles */
-    font-size: 2em; /* Set your desired font size */
-    text-align: left; /* Adjust text alignment if needed */
-    margin-bottom: 20px;
-    margin-top: -20px;
-    color: #333;
-    font-weight: bold; /* Ensure the heading is bold */
-}
