@@ -77,7 +77,7 @@
     all: unset; /* Reset all inherited styles */
     font-size: 2em; /* Set your desired font size */
     text-align: left; /* Adjust text alignment if needed */
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     margin-top: -20px;
     color: #333;
     font-weight: bold; /* Ensure the heading is bold */
