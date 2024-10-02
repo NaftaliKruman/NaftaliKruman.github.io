@@ -79,6 +79,7 @@
     text-align: left; /* Adjust text alignment if needed */
     margin-bottom: 20px;
     margin-top: -20px;
+    padding-bottom: 20px;
     color: #333;
     font-weight: bold; /* Ensure the heading is bold */
 }
