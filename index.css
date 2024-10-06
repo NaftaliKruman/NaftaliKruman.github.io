@@ -23,7 +23,7 @@
     max-width: 300px; /* Ensure the image doesn't exceed this width */
     align-self: flex-start; /* Align image to the start of the container */
     position: relative; /* Use relative positioning */
-    margin-top: 40px; /* Move the image up significantly on larger screens */
+    margin-top: 0px; /* Move the image up significantly on larger screens */
     margin-bottom: -40px; /* Reduce gap to footer by using a negative margin */
 }
 
@@ -35,8 +35,6 @@
     border: 3px solid #333; /* Add a border */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
-
-
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
