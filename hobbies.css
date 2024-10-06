@@ -56,6 +56,9 @@
         margin-bottom: 10px; /* Adjust bottom margin for smaller screens */
         text-align: left; /* Keep text left-aligned on smaller screens */
     }
+    .hobbies-text h1 {
+        margin-left: -20px; /* Reset any margin */
+    }
 }
 
 @media (max-width: 480px) {
@@ -70,5 +73,8 @@
         margin-top: 0; /* Reset top margin for very small screens */
         margin-bottom: 10px; /* Adjust bottom margin for very small screens */
         text-align: left; /* Keep text left-aligned for very small screens */
+    }
+     .hobbies-text h1 {
+        margin-left: -20px; /* Reset any margin */
     }
 }
