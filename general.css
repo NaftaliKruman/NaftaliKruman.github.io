@@ -191,6 +191,10 @@ footer {
     .container {
         width: 95%;
     }
+
+    footer {
+        font-size: 1.0em;
+    }
 }
 
 @media (max-width: 480px) {
