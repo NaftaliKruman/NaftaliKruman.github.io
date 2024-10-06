@@ -54,6 +54,7 @@ button[type="submit"]:hover {
     color: #888;
     text-align: left; /* Center the indicator */
     margin-top: 20px; /* Space above the indicator */
+    margin-bottom: -20px;
 }
 
 .form-indicator a {
