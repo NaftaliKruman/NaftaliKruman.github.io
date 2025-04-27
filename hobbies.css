@@ -24,7 +24,7 @@
     max-width: 400px; /* Ensure the image doesn't exceed this width */
     margin-top: -90px; /* Move the image up significantly on larger screens */
     margin-left: 20px;
-    margin-bottom: -50px; /* Reduce gap to footer by using a negative margin */
+    margin-bottom: -60px; /* Reduce gap to footer by using a negative margin */
     align-self: flex-start; /* Align image to the start of the container */
     position: relative; /* Use relative positioning */
 }
