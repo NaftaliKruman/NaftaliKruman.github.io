@@ -1,3 +1,7 @@
+footer {
+    margin-top: auto;
+}
+
 .profile-section {
     display: flex;
     align-items: flex-start;
